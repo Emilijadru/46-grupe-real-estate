@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+header {
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    background-color: yellow;
+}
+
+img {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+}
+nav {
+
+}
+
+header > a {
+background-color: aqua;
+}
+
+img {
+    background-color: blue;
+}
+
+nav + img {
+    background-color: antiquewhite;
+}
