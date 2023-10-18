@@ -2,28 +2,42 @@ body {
     margin: 0;
 }
 header {
-    width: 1000px;
-    margin-left: calc(50% - 500px);
+    display: inline-block;
+    width: 800px;
+    margin-left: calc(50% - 400px);
     background-color: yellow;
 }
+/*logo*/
 
-img {
+header > img {
     width: 100px;
     height: 30px;
-    background-color: red;
+    float: left;
 }
+
+div {
+    float: right;
+}
+
 nav {
-
+float: left;
+margin-top: 10px;
+margin-right: 30px;
 }
 
-header > a {
-background-color: aqua;
+a {
+    font-size: 20px;
+    line-height: 20px;
 }
 
-img {
-    background-color: blue;
+a + a {
+    margin-left: 30px;
 }
 
-nav + img {
-    background-color: antiquewhite;
+/*user avatar*/
+div > img {
+width: 40px;
+height: 40px;
+float: right;
+border-radius: 50%;
 }
