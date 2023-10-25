@@ -156,29 +156,35 @@ overflow: hidden;
 }
 
 .recommended-listing > .listing-item {
-    display: inline-block;
+    display: flex;
+    gap: 20;
+    align-items: center;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
 }
 
-.recommended-listing > .listing-item {
+.recommended-listing > .listing-item:last-child {
     margin-bottom: 0;
 }
 .recommended-listing .item-image{
 width: 25%;
-float: left;
 height: 120px;
 object-fit: cover;
 margin-right: 20px;
 object-position: center;
+border-radius: 10px;
 }
 
 .recommended-listing .item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: calc(75% - 40px);
     float: left;
-    margin-top: 10px;
 }
 
 .recommended-listing .item-price{
@@ -192,10 +198,19 @@ object-position: center;
     font-size: 16px;
 }
 .recommended-listing .item-features{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
     font-size: 14px;
 }
 .recommended-listing .feature{
-float: left;
-margin-right: 15px;
+}
+
+.recommended-listing .bookmark {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 30px;
 }
