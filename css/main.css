@@ -12,8 +12,7 @@ body {
 .main-header {
     display: inline-block;
     width: 1200px;
-    margin-top: 20px;
-    margin-left: calc(50% - 600px);
+    margin: 20px calc(50% - 600px) 0;
 }
 /*logo*/
 
@@ -64,8 +63,7 @@ cursor: pointer;
 main {
     display: inline-block;
     width: 1200px;
-    margin-top: 20px;
-    margin-left: calc(50% - 500px);
+    margin: 20px calc(50% - 600px) 40px;
 }
 
 .hero {
@@ -89,16 +87,14 @@ margin-bottom: 30px;
 }
 
 .neighborhood {
-    width: 65%;
+    width: 60%;
     float: left;
     margin-right: 30px;
-    background-color: aqua;
 }
 
 .recommended {
-    width: calc(35% - 30px);
+    width: calc(40% - 30px);
     float: right;
-    background-color: tomato;
 }
 
 .section-title{
@@ -154,3 +150,52 @@ overflow: hidden;
 }
 .neighborhood-listing .location {}
 .neighborhood-listing .name {}
+
+.recommended-listing{
+    width: 100%;
+}
+
+.recommended-listing > .listing-item {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.recommended-listing > .listing-item {
+    margin-bottom: 0;
+}
+.recommended-listing .item-image{
+width: 25%;
+float: left;
+height: 120px;
+object-fit: cover;
+margin-right: 20px;
+object-position: center;
+}
+
+.recommended-listing .item-details{
+    width: calc(75% - 40px);
+    float: left;
+    margin-top: 10px;
+}
+
+.recommended-listing .item-price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.recommended-listing .location-street{
+    font-size: 18px;
+}
+.recommended-listing .location-city{
+    font-size: 16px;
+}
+.recommended-listing .item-features{
+    display: inline-block;
+    font-size: 14px;
+}
+.recommended-listing .feature{
+float: left;
+margin-right: 15px;
+}
