@@ -37,14 +37,15 @@
         <section class="hero">
             <div class="hero-content">
                 <h1 class="main-title">We help you find your dream home.</h1>
-                <form>
-                    <div>
-                        <button type="button">Buy</button>
-                        <button type="button">Rent</button>
+                <form class="form">
+                    <div class="filter">
+                        <button class="filter-btn" type="button">Buy</button>
+                        <button class="filter-btn" type="button">Rent</button>
                     </div>
-                    <div>
-                        <input type="text">
-                        <button type="submit"></button>
+                    <div class="search">
+                        <label class="label" for="search-address">search</label>
+                        <input id="search-address" class="input" type="text" placeholder="Search for city">
+                        <button class="search-btn fa fa-search" type="submit"></button>
                     </div>
                 </form>
             </div>
@@ -80,7 +81,7 @@
                                 <p class="name">Carroll Gardens</p>
                      </div>
                  </div>
-                 <a href="#">See all</a>
+                 <a class="btn" href="#">See all</a>
               </div>
          </section>
 
@@ -102,7 +103,10 @@
                                 <p class="feature"><i class="fa fa-bath" aria-hidden="true"></i> 2 baths</p>
                         </div>
                     </div>
-                    <div class="fa fa-bookmark bookmark"></div>
+                    <div class="bookmark active">
+                    <div class="fa fa-bookmark-o"></div>
+                    <div class="fa fa-bookmark"></div>
+                    </div>
                 </div>
                 <div class="listing-item">
                     <img class="item-image" src="./img/vienas.png" alt="House">
@@ -116,7 +120,10 @@
                                 <p class="feature"><i class="fa fa-bath" aria-hidden="true"></i> 2 baths</p>
                         </div>
                     </div>
-                    <div class="fa fa-bookmark bookmark"></div>
+                    <div class="bookmark active">
+                        <div class="fa fa-bookmark-o"></div>
+                        <div class="fa fa-bookmark"></div>
+                        </div>
                 </div>
             </div>
          </section>

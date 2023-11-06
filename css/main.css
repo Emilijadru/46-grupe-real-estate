@@ -86,6 +86,60 @@ main {
 margin-bottom: 30px;
 }
 
+.form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.form > .filter {
+display: flex;
+gap: 10px;
+padding: 10px;
+border-radius: 14px;
+background-color: white;
+}
+.form .filter-btn {
+padding: 8px 35px;
+border: none;
+background-color: white;
+color: plum;
+font-size: 18px;
+border-radius: 6px;
+cursor: pointer;
+}
+.form .filter-btn:hover {
+    box-shadow: 0 2px 8px #88f8;
+}
+.form .filter-btn.active {
+    background-color: plum;
+    color: white;
+}
+.form > .search {
+display: flex;
+width: 100%;
+gap: 15px;
+
+}
+.form .input {
+padding: 15px 20px;
+font-size: 20px;
+}
+.form .search-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #ff9376;
+    color: white;
+    border: 2px solid #ff9376;
+    box-shadow: 0 4px 8px rgb(255, 147, 118, 0.5) ;
+}
+.form .label{
+display: none;
+}
 .neighborhood {
     width: 60%;
     float: left;
@@ -112,7 +166,6 @@ margin-bottom: 20px;
 .neighborhood-listing > .listing-item {
 width: calc((100% - 2 * 30px) / 3);
 margin-right: 30px;
-margin-bottom: 20px;
 float: left;
 background-color: pink;
 position: relative;
@@ -121,6 +174,11 @@ overflow: hidden;
 }
 .neighborhood-listing > .listing-item.last-item {
     margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.neighborhood-listing .listing-item.last-item{
+height: 150px;
 }
 
 .neighborhood-listing .item-image {
@@ -150,6 +208,20 @@ overflow: hidden;
 }
 .neighborhood-listing .location {}
 .neighborhood-listing .name {}
+
+.btn{
+display: inline-block;
+padding: 10px 20px;
+font-size: 18px;
+line-height: 20px;
+border-radius: 8px;
+text-decoration: none;
+text-transform: capitalize;
+background-color: #ff9376;
+color: white;
+border: 2px solid #ff9376;
+box-shadow: 0 4px 8px rgb(255, 147, 118, 0.5) ;
+}
 
 .recommended-listing{
     width: 100%;
@@ -206,11 +278,33 @@ border-radius: 10px;
 .recommended-listing .feature{
 }
 
+.recommended-listing .feature > .fa {
+margin-right: 5px;
+}
+
 .recommended-listing .bookmark {
     width: 30px;
     height: 30px;
     position: absolute;
+    top: -5px;
     top: 0;
     right: 30px;
     font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recommended-listing .bookmark:hover {
+}
+
+.recommended-listing .bookmark > .fa-bookmark,
+.recommended-listing .bookmark:active:hover > .fa-bookmark-o,
+.recommended-listing .bookmark:hover > .fa-bookmark-o,
+.recommended-listing .bookmark:active > .fa-bookmark-o{
+    display: none;
+}
+.recommended-listing .bookmark:active > .fa-bookmark,
+ .recommended-listing .bookmark:active:hover > .fa-bookmark,
+.recommended-listing .bookmark:hover > .fa-bookmark {
+    display: block;
 }
